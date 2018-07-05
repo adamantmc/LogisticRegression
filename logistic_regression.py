@@ -24,7 +24,7 @@ def confusion_matrix(y_pred, y_true):
                 tp += 1
             else:
                 fp += 1
-                
+
     return tp, tn, fp, fn
 
 class LogisticRegression(object):
@@ -106,6 +106,8 @@ class LogisticRegression(object):
         plt.subplot(2, 1, 2)
         plt.plot(val_acc, label="Validation set accuracy")
         plt.plot(train_acc, label="Training set accuracy")
+
+        plt.xlabel("Iterations (in hundreds)")
 
         plt.legend()
 
