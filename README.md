@@ -13,3 +13,6 @@ The model is trained using a learning rate of 0.01 and 1000 iterations. Below yo
 ![Alt text](loss_accuracy_plot.png?raw=true "Loss and Accuracy curve")
 
 Accuracy in test set: 0.989333
+
+And here are some predictions (class and probability) for 25 random test images:
+![Alt text](image_plot.png?raw=true "Class and Probability predictions for random images")
