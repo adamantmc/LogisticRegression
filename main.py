@@ -23,7 +23,7 @@ def load_dataset(image_folder="images/", split_ratio=0.7):
         resnet = ResNet50(weights='imagenet')
         feature_model = Model(inputs=resnet.input, outputs=resnet.get_layer("flatten_1").output)  
         
-        files = [os.path.join(image_folder, filename) for filename in os.listdir(image_folder) if os.path.isfile(os.path.join(image_folder, filename))][:100]
+        files = [os.path.join(image_folder, filename) for filename in os.listdir(image_folder) if os.path.isfile(os.path.join(image_folder, filename))]
         np.random.shuffle(files)
         
         labels = [labels_dict[os.path.basename(f).split(".")[0]] for f in files]

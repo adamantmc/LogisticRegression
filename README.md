@@ -12,4 +12,4 @@ The model is trained using a learning rate of 0.01 and 1000 iterations. Below yo
 
 ![Alt text](loss_accuracy_plot.png?raw=true "Loss and Accuracy curve")
 
-Accuracy in test set: 0.99066
+Accuracy in test set: 0.989333
